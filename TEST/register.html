@@ -1,46 +1,81 @@
 <!DOCTYPE html>
 <html>
-<head>
-</head>
-<body>
-<center>
-    <form id="registerForm">
-    <table>
-        <tr>
-            <td><input type="text" name="txtName" placeholder="Name" required></td>
-        </tr>
-        <tr>
-            <td><input type="email" name="txtEmail" placeholder="email" required></td>
-        </tr>
-        <tr>
-            <td><input type="password" name="txtPassword" placeholder="password" required></td>
-        </tr>
-        <tr>
-            <td><input type="password" name="txtConfirmPassword" placeholder="confirm password" required></td>
-        </tr>
-        <tr>
-            <td><select name="dropdownCity">
+  <head> </head>
+  <body>
+    <center>
+      <form id="registerForm">
+        <table>
+          <tr>
+            <td>
+              <input type="text" name="txtName" placeholder="Name" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="email"
+                name="txtEmail"
+                placeholder="email"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="password"
+                name="txtPassword"
+                placeholder="password"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="password"
+                name="txtConfirmPassword"
+                placeholder="confirm password"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <select name="dropdownCity">
                 <option>Ahmedabad</option>
                 <option>Mumbai</option>
                 <option>Pune</option>
-            </select></td>
-        </tr>
-        <tr>
-            <td><select name="dropdownState">
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <select name="dropdownState">
                 <option>Gujarat</option>
                 <option>Maharastra</option>
-            </select></td>
-        </tr>
-        <tr>
+              </select>
+            </td>
+          </tr>
+          <tr>
             <td>
-            <input type="checkbox" id="checkTermsCondition">Terms & Condtions</td>
-        </tr>
-        <tr>
-            <td><input type="button" id="btnRegister" value="Register" onclick="return registerUser()"></td>
-        </tr>
-    </table>
-</form>
-</center>
+              <input type="checkbox" id="checkTermsCondition" />Terms &
+              Condtions
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="button"
+                id="btnRegister"
+                value="Register"
+                onclick="return registerUser()"
+              />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </center>
     <script src="register.js"></script>
-</body>
+  </body>
 </html>
