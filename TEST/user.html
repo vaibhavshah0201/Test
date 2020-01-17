@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+    Hello ,<div id="adminName"></div>
+
+    <br>
+    <br>
+    <a href="dashboard.html">Dashboard</a>
+    <br>
+    <a href="user.html">Users</a>
+    <br>
+    <a href="sessionLog.html">Login Sessions</a>
+    <br>
+    <a href="logout.html">Logout</a>
+
+    <h2>Add User</h2>
+    <form id="userForm"> 
+        <table>
+            <tr>
+                <td><input type="text" name="txtUserName" id="userName" placeholder="name"></td>
+            </tr>
+            <tr>
+                <td><input type="email" name="txtUserEmail" id="userEmail" placeholder="Email"></td>
+            </tr>
+            <tr>
+                <td><input type="password" name="txtUserPassword" id="userPassword" placeholder="password"></td>
+            </tr>
+            <tr>
+                <td><input type="Date" name="txtUserBirthDate"></td>
+                <input type="hidden" name="userId" id="valueOfId">
+            </tr>
+            <tr>
+                <td><input type="button" value="Add" id="btnAdd" onclick="return addUser()">
+                    <input type="button" value="Update" id="btnUpdate" style="visibility:hidden;" onclick="return update()">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <form id="displayForm"> 
+        <table border="1" id="displayData">
+            <tr>
+                <th>NO.</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Birthdate</th>
+                <th>Age</th>
+                <th>Actions</th>
+            </tr>
+
+        </table>
+    </form>
+
+
+
+<script src="user.js"></script>
+</body>
+</html>
